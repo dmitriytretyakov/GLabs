@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+    <div class="card">
+        <input type="text" placeholder="Input G-Bot Number" class="query-input" [formControlName]="'query'">
+        @if(bot()) {
+            <img [src]="preview()">
+            <div class="info">
+                <div class="name">{{ bot()?.metadata!.name }} &bull; {{ miningValue() }}&nbsp;GLABS</div>
+                <div class="description">{{ bot()?.metadata!.description }}</div>
+            </div>
+            <div class="actions">
+                <a [href]="'https://getgems.io/collection/gbots/' + bot()?.address" target="_blank">
+                    <button type="button" class="getgems-button">Getgems</button>
+                </a>
+                <a [href]="'https://tonviewer.com/' + bot()?.address" target="_blank">
+                    <button type="button" class="tonviewer-button">Tonviewer</button>
+                </a>
+            </div>
+        }
+    </div>
+</form>

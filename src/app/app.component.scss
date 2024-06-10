@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #2b3551;
+  border-radius: 16px;
+  padding: 16px;
+}
+img {
+  border-radius: 16px;
+}
+.mining-value {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.name {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #eff6fd;
+}
+.description {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  button {
+    width: 100%;
+  }
+}
+button {
+  height: 48px;
+  border: none;
+  border-radius: 16px;
+  font-weight: 500;
+}
+.getgems-button {
+  background-color: #0393ff;
+  color: #fff;
+}
+.tonviewer-button {
+  background-color: #213dd1;
+  color: #fff;
+}
+.query-input {
+  height: 48px;
+  border: 0;
+  border-radius: 16px;
+  padding: 0 16px;
+  outline: none;
+  font-size: 16px;
+}
+
